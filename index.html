@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+    <title>Landing Page</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Open Sans, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #1f279d;
+            color: white;
+            padding: 5px 0;
+        }
+
+        header a:hover {
+            color: #a7a8ad;
+            text-decoration: underline;
+            transition: color 0.10s;
+        }
+
+        header ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        header li {
+            margin: 0 35px;
+        }
+
+        header a {
+            color: rgb(229, 255, 0);
+            text-decoration: none;
+        }
+
+        header .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        .nome-fantasia {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 0;
+            color: #fff;
+        }
+
+        header ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        header li {
+            margin: 0 20px;
+        }
+
+        header a {
+            color: rgb(229, 255, 0);
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        .tela01 {
+            text-align: center;
+            padding: 40px;
+            margin: 0px;
+            background-color: rgb(10, 10, 75);
+            width: auto;
+            height: 670px;
+        }
+
+        .tela02 {
+            text-align: center;
+            padding: 90px;
+            margin: 0px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .tela03 {
+            text-align: center;
+            padding: 40px;
+            margin: 0px;
+            background-color: rgb(10, 10, 75);
+            width: auto;
+            height: 650px;
+        }
+
+        main h1 {
+            color: white;
+            font-size: 2.1em;
+        }
+
+        article {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-imagem {
+            background: #dbef08;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+            padding: 24px;
+            display: inline-block;
+            margin-top: 10px;
+            text-align: center;
+            max-width: 440px;
+            width: 100%;
+        }
+
+        .card-imagem img {
+            max-width: 350px;
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 16px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: auto;
+        }
+
+        .card-imagem h2 {
+            margin: 0 0 8px 0;
+            color: #333;
+            font-size: 1.2em;
+        }
+
+        .card-imagem p {
+            color: #0a0000;
+            font-size: 1em;
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 34px;
+            flex-wrap: wrap;
+        }
+
+        .card-imagem img:hover {
+            transform: scale(1.07);
+            box-shadow: 0 8px 24px rgba(228, 220, 220, 0.25);
+        }
+
+        .header-container img {
+            border-radius: 50%;
+            width: 62px;
+            height: 62px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 900px) {
+            .header-container {
+                flex-direction: column;
+                gap: 18px;
+                padding: 0 12px;
+            }
+/*             header ul {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+ */            .tela02 > div {
+                flex-direction: column !important;
+                gap: 24px !important;
+            }
+            .tela02 img {
+                width: 220px !important;
+                height: 220px !important;
+            }
+            .tela02 div[style*="text-align: left"] {
+                max-width: 100% !important;
+                padding: 0 10px;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .cards-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 22px;
+            }
+            .card-imagem {
+                max-width: 98vw;
+                padding: 16px;
+            }
+            .tela01, .tela03 {
+                padding: 18px 2vw;
+                height: auto;
+            }
+            
+            main h1 {
+                font-size: 1.3em;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .header-container img {
+                width: 38px;
+                height: 38px;
+            }
+            .nome-fantasia {
+                font-size: 1.1em;
+            }
+            header li {
+                margin: 0 8px;
+            }
+            .tela02 {
+                padding: 30px 2vw;
+            }
+            .tela02 img {
+                width: 120px !important;
+                height: 120px !important;
+            }
+            .card-imagem img {
+                max-width: 98vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div style="display: flex; align-items: center; gap: 12px;">
+                <img src="logo pereira bh.jpg" alt="Logo">
+                <p class="nome-fantasia">Tec Pereira BH</p>
+            </div>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Promoções</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="tela01">
+        <h1 id="typing-effect"></h1>
+        <script>
+            const fullText = "Temos landing pages prontas para você + domínio personalizado!";
+            const shortText = "Bem-vindo à Tec Pereira BH!";
+            const typingElement = document.getElementById("typing-effect");
+            let i = 0;
+            let text = fullText;
+
+            function updateTextForScreen() {
+            if (window.innerWidth <= 500) {
+                text = shortText;
+            } else {
+                text = fullText;
+            }
+            }
+
+            function typeWriter() {
+            if (i < text.length) {
+                typingElement.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 90);
+            } else {
+                setTimeout(() => {
+                typingElement.innerHTML = "";
+                i = 0;
+                updateTextForScreen();
+                typeWriter();
+                }, 1200);
+            }
+            }
+
+            window.addEventListener('resize', () => {
+            updateTextForScreen();
+            typingElement.innerHTML = "";
+            i = 0;
+            });
+
+            updateTextForScreen();
+            typeWriter();
+        </script>
+
+        <div class="cards-container">
+            <div class="card-imagem">
+                <img src="Computador.png" alt="">
+                <h2>Instala</h2>
+                <p>Formatação completa com backup <br>
+                    R$200,00
+                </p>
+                <a href="https://wa.me/SEUNUMEROAQUI" target="_blank" style="display:inline-block;margin-top:12px;padding:10px 22px;background:#e53935;color:#fff;border:none;border-radius:6px;font-size:1em;text-decoration:none;font-family:inherit;transition:background 0.2s;">
+                    Falar no WhatsApp
+                </a>
+            </div>
+            <div class="card-imagem">
+                <img src="Notebook.png" alt="">
+                <h2>Título do Card</h2>
+                <p>Descrição breve da imagem ou produto.</p>
+                <a href="https://wa.me/SEUNUMEROAQUI" target="_blank" style="display:inline-block;margin-top:12px;padding:10px 22px;background:#e53935;color:#fff;border:none;border-radius:6px;font-size:1em;text-decoration:none;font-family:inherit;transition:background 0.2s;">
+                    Falar no WhatsApp
+                </a>
+            </div>
+            <div class="card-imagem">
+                <img src="Samsung.png" alt="">
+                <h2>Título do Card</h2>
+                <p>Descrição breve da imagem ou produto.</p>
+                <a href="https://wa.me/SEUNUMEROAQUI" target="_blank" style="display:inline-block;margin-top:12px;padding:10px 22px;background:#e53935;color:#fff;border:none;border-radius:6px;font-size:1em;text-decoration:none;font-family:inherit;transition:background 0.2s;">
+                    Falar no WhatsApp
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <main class="tela02">
+        <div style="display: flex; align-items: center; justify-content: center; gap: 48px; max-width: 1100px; margin: 0 auto; flex-wrap: wrap;">
+            <img src="logo pereira bh.jpg" alt="Logo Tec Pereira BH" style="border-radius: 50%; width: 380px; height: 380px; box-shadow: 0 4px 16px rgba(0,0,0,0.12); background: #fff;">
+            <div style="text-align: center; color: #000000; max-width: 520px; width: 100%;">
+                <h2 class="sobre-h2" style="font-family: 'Exo', Arial, sans-serif; font-size: 2em; margin-bottom: 12px;">Sobre a Tec Pereira BH</h2>
+                <p style="font-size: 1.15em; line-height: 1.9; text-align: center;">
+                    Somos especialistas em soluções digitais e assistência técnica em informática. Oferecemos landing pages prontas, sistemas webs e domínio personalizado para o seu projeto. <br><br>Temos serviços de manutenção para computadores e notebooks com opção de acesso remoto. Nosso compromisso é entregar qualidade, agilidade e atendimento personalizado para você ou sua empresa.
+                </p>
+            </div>
+        </div>
+        <style>
+            @media (max-width: 700px) {
+                .sobre-h2 {
+                    font-size: 1.2em !important;
+                }
+            }
+            @media (max-width: 500px) {
+                .sobre-h2 {
+                    font-size: 1em !important;
+                }
+            }
+        </style>
+    </main>
+    <main class="tela03">
+        <div class="cards-container">
+            <div class="card-imagem">
+                <img src="Computador.png" alt="">
+                <h2>Instala</h2>
+                <p>Formatação completa com backup <br>
+                    R$200,00
+                </p>
+            </div>
+            <div class="card-imagem">
+                <img src="Notebook.png" alt="">
+                <h2>Título do Card</h2>
+                <p>Descrição breve da imagem ou produto.</p>
+            </div>
+            <div class="card-imagem">
+                <img src="Samsung.png" alt="">
+                <h2>Título do Card</h2>
+                <p>Descrição breve da imagem ou produto.</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
