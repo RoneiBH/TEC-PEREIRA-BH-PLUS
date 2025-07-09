@@ -80,7 +80,7 @@
             margin: 0px;
             background-color: rgb(10, 10, 75);
             width: auto;
-            height: 670px;
+            height: 690px;
         }
 
         .tela02 {
@@ -96,12 +96,12 @@
             margin: 0px;
             background-color: rgb(10, 10, 75);
             width: auto;
-            height: 650px;
+            height: 690px;
         }
 
         main h1 {
             color: white;
-            font-size: 2.1em;
+            font-size: 1.5em;
         }
 
         article {
