@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo Profissional de Alexandra Conceição Oliveira fonseca</title>
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <style>
@@ -31,7 +32,7 @@
             color: var(--text-color);
             background-color: var(--background-color);
             line-height: 1.6;
-            scroll-behavior: smooth; 
+            scroll-behavior: smooth;
         }
 
         /* NOVA CLASSE PARA TRAVAR A ROLAGEM DO BODY */
@@ -53,7 +54,9 @@
             list-style: none;
         }
 
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3 {
             color: var(--text-color);
             margin-bottom: 1rem;
             font-weight: 700;
@@ -67,10 +70,10 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 40px 20px; /* Padding ajustado */
+            padding: 40px 20px;
             text-align: center;
-            height: 100vh; /* Alterado de min-height para height */
-            box-sizing: border-box; /* Garante que o padding fique dentro da altura total */
+            height: 100vh;
+            box-sizing: border-box;
         }
 
         .hero-content {
@@ -144,12 +147,12 @@
             gap: 30px;
             grid-template-columns: 1fr;
         }
-        
+
         .section-card {
             background-color: var(--card-background);
             border-radius: 12px;
             box-shadow: 0 5px 15px var(--shadow-color);
-            padding: 30px;
+            padding: 18px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
@@ -172,24 +175,28 @@
             color: var(--primary-color);
         }
 
-        .card-content p, .card-content li {
+        .card-content p,
+        .card-content li {
             font-size: 1rem;
             margin-bottom: 0.8rem;
         }
 
         .card-content strong {
             color: var(--primary-color);
+
         }
-        
+
+
         .section-card ul {
             margin-left: 20px;
             list-style: disc;
         }
+
         .section-card ul ul {
             list-style: circle;
             margin-top: 5px;
         }
-        
+
         .job-entry {
             margin-bottom: 25px;
         }
@@ -220,7 +227,7 @@
             border-top: 1px dashed var(--border-color);
             margin: 20px 0;
         }
-        
+
         .contact-section {
             text-align: center;
             padding: 60px 20px;
@@ -243,7 +250,8 @@
             margin-right: auto;
         }
 
-        .btn-primary, .btn-secondary {
+        .btn-primary,
+        .btn-secondary {
             display: inline-block;
             padding: 12px 25px;
             border-radius: 8px;
@@ -251,7 +259,7 @@
             margin: 0 10px;
             transition: background-color 0.3s ease, transform 0.2s ease;
         }
-        
+
         .btn-primary {
             background-color: #ffffff;
             color: var(--primary-color);
@@ -276,10 +284,11 @@
             transform: translateY(-3px);
         }
 
-        .btn-primary i, .btn-secondary i {
+        .btn-primary i,
+        .btn-secondary i {
             margin-right: 8px;
         }
-        
+
         footer {
             text-align: center;
             padding: 30px 20px;
@@ -292,6 +301,11 @@
             main {
                 grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
             }
+
+            .hero-section {
+                padding-top: 190px;
+                /* Aumenta o espaço no topo em telas menores */
+            }
         }
 
         @media (max-width: 600px) {
@@ -299,25 +313,40 @@
                 flex-direction: column;
                 gap: 5px;
             }
-            .btn-primary, .btn-secondary {
+
+            .btn-primary,
+            .btn-secondary {
                 display: block;
                 margin: 15px auto;
                 width: 80%;
             }
+
+            .section-card h2 {
+                font-size: 1.5rem;
+                gap: 10px;
+            }   
+
         }
-        
+
+        @media (max-width: 768px) {
+    .hero-section {
+        padding-top: 80px; /* Aumenta o espaço no topo em telas menores */
+    }
+}
+
         .expand-button-container {
             margin-top: 40px;
             width: 100%;
             display: flex;
             justify-content: center;
         }
+
         .expand-button-container .btn-primary {
             background-color: #f0ad4e;
             color: var(--text-color);
             border: 2px solid #343a40;
         }
-        
+
         main#collapsible-content {
             max-height: 0;
             opacity: 0;
@@ -326,7 +355,7 @@
             padding: 0 20px !important;
             transition: all 0.7s ease-in-out;
         }
-        
+
         main#collapsible-content.content-visible {
             max-height: 3000px;
             opacity: 1;
@@ -335,6 +364,7 @@
         }
     </style>
 </head>
+
 <body class="no-scroll">
 
     <section id="inicio" class="hero-section">
@@ -342,14 +372,15 @@
             <div class="profile-photo-container">
                 <img src="img/Alexandra.png" alt="Foto de Perfil" class="profile-photo">
             </div>
-            
+
             <h1>Alexandra Conceição Oliveira fonseca</h1>
-            <p class="tagline">Atuar na área administrativa</p>
+            <p class="tagline">Experiência na área administrativa</p>
             <div class="contact-info">
                 <p><i class="fas fa-phone-alt"></i> (31) 99477-6399</p>
                 <p><i class="fas fa-envelope"></i> aleofonseca@hotmail.com</p>
                 <p><i class="fas fa-map-marker-alt"></i> Belo Horizonte, Barreiro</p>
             </div>
+
             <div class="social-links">
                 <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
@@ -361,24 +392,53 @@
     </section>
 
     <main id="collapsible-content">
-        
+
         <section id="dados-pessoais" class="section-card">
             <h2><i class="fas fa-user-circle"></i> Dados Pessoais</h2>
             <div class="card-content">
-                <p><strong>Estado Civil:</strong> [Preencher]</p>
-                <p><strong>Idade:</strong> [Preencher] anos</p>
-                <p><strong>Habilitação:</strong> [Preencher]</p>
+                <p><strong>Estado Civil:</strong> Casada</p>
+                <p><strong>Idade:</strong> 52 anos</p>
+                <p><strong>Habilitação:</strong> Categoria B</p>
             </div>
         </section>
 
-        <section id="formacao" class="section-card">
-            <h2><i class="fas fa-graduation-cap"></i> Cursos e Escolaridade</h2>
-            <div class="card-content">
-                <h3>Formação Acadêmica</h3>
+        <section id="formacao" class="section-card" style="display: flex; align-items: flex-start; gap: 30px;">
+            <div class="card-content" style="flex: 1;">
+                <h2 style="margin-top: 0;"><i class="fas fa-graduation-cap"></i> Cursos e Escolaridade</h2>
+                <!-- <h3>Formação Acadêmica</h3> -->
                 <ul>
                     <li>
-                        <strong>[Nome do Curso]</strong> - [Nome da Instituição] <br>
-                        [Ano de Início] - [Ano de Conclusão]
+                        <strong>Técnico em administração de empresas</strong> <br>Estituição: Grau Técnico <br>
+                        [Março de 2023] - [Outubro de 2025]
+                    </li>
+                    <li>
+                        <strong>Ensino Médio Concluído</strong> <br>Escola Estadual Álvaro Laureano Pimentel <br>
+                        [Fevereiro de 1988] - [ Dezembro 1990]
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="formacao" class="section-card" style="display: flex; align-items: flex-start; gap: 30px;">
+            <div class="card-content" style="flex: 1;">
+                <h2 style="margin-top: 0;"><i class="fas fa-graduation-cap"></i> Cursos Complementares</h2>
+                <!-- <h3>Formação Acadêmica</h3> -->
+                <ul>
+                    <li>
+                        <strong>Dicas e Estratégias para Liderança de Alta Impacto</strong> <br>Estituição: Grau Técnico
+                        <br>
+                        [Março de 2024]
+                    </li>
+                    <li>
+                        <strong>Fundação Bradesco</strong> <br>Pacote office Excel, Word e PowerPoint <br>
+                        [Dezembro de 2023]
+                    </li>
+                    <li>
+                        <strong>Escola Conquer</strong> <br>Formação em Liderança<br>
+                        [Setembro de 2023]
+                    </li>
+                    <li>
+                        <strong>CNI Informática</strong> <br>Informática Avançada, Microsoft, Telemarketing<br>
+                        [Outubro de 2004]
                     </li>
                 </ul>
             </div>
@@ -388,21 +448,36 @@
             <h2><i class="fas fa-briefcase"></i> Experiência Profissional</h2>
             <div class="card-content">
                 <div class="job-entry">
-                    <h3>[Cargo/Função]</h3>
-                    <p class="company-name">[Nome da Empresa] | [Mês/Ano de Início] - [Mês/Ano de Fim ou 'Atual']</p>
-                    <ul>
-                        <li>[Descrição da sua principal responsabilidade ou conquista 1]</li>
-                    </ul>
+
+                    <h3>Núcleo BH Especialização</h3>
+                    Recepcionista - Julho de 2010 a Agosto de 2025 <br><br>
+
+                    <h3>Transfacil bilhetagem de Vale Transporte</h3>
+                    Assistente de Venda - Março de 2019 a Fevereiro de 2024 <br><br>
+
+                    <h3>Plansul-Planejamento e Consultoria</h3>
+                    Operador de telemarketing - Julho de 2014 a Julho de 2016<br><br>
+
+                    <h3>Alma Viva do Brasil</h3>
+                    Instrutora de treinamento/Supervisora de atendimento - Maio de 2008 a Janeiro de 2013 <br><br>
+
+                    <h3>Hidromig LTDA</h3>
+                    Assistente Administrativo - Março de 1991 a Fevereiro de 1994<br><br>
+
+                    <h3>Studio Beleza Rara</h3>
+                    Cabelereira - Setembro de 1994 a Julho de 1999
                 </div>
             </div>
         </section>
-        
-        <section id="contato" class="contact-section">
-            <h2>Vamos Conectar!</h2>
-            <p>Estou sempre aberta a novas oportunidades e desafios. Entre em contato!</p>
-            <a href="mailto:aleofonseca@hotmail.com" class="btn-primary"><i class="fas fa-envelope"></i> Enviar E-mail</a>
+
+        <section class="contact-section">
+            <h2>Vamos Conversar!</h2>
+            <p>Estou aberta a novas oportunidades e desafios na área administrativa. Entre em contato para discutirmos
+                como posso contribuir para o sucesso da nossa equipe.</p>
+            <a href="mailto:aleofonseca@hotmail.com" class="btn-primary"><i class="fas fa-envelope"></i> Enviar
+                E-mail</a>
         </section>
-    
+
         <footer>
             <p>&copy; 2024 Alexandra Conceição Oliveira fonseca. Todos os direitos reservados.</p>
         </footer>
@@ -410,28 +485,29 @@
     </main>
 
     <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const expandButton = document.getElementById('expand-cv');
-        const collapsibleContent = document.getElementById('collapsible-content');
+        document.addEventListener('DOMContentLoaded', () => {
+            const expandButton = document.getElementById('expand-cv');
+            const collapsibleContent = document.getElementById('collapsible-content');
 
-        if (expandButton && collapsibleContent) {
-            expandButton.addEventListener('click', () => {
-                collapsibleContent.classList.toggle('content-visible');
-                
-                // Controla a classe no-scroll do body
-                if (collapsibleContent.classList.contains('content-visible')) {
-                    document.body.classList.remove('no-scroll');
-                    expandButton.textContent = 'Recolher Currículo';
-                    collapsibleContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                } else {
-                    document.body.classList.add('no-scroll');
-                    expandButton.textContent = 'Ver Currículo Completo';
-                    // Opcional: rolar de volta para o topo
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
-            });
-        }
-    });
+            if (expandButton && collapsibleContent) {
+                expandButton.addEventListener('click', () => {
+                    collapsibleContent.classList.toggle('content-visible');
+
+                    // Controla a classe no-scroll do body
+                    if (collapsibleContent.classList.contains('content-visible')) {
+                        document.body.classList.remove('no-scroll');
+                        expandButton.textContent = 'Recolher Currículo';
+                        collapsibleContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    } else {
+                        document.body.classList.add('no-scroll');
+                        expandButton.textContent = 'Ver Currículo Completo';
+                        // Opcional: rolar de volta para o topo
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                });
+            }
+        });
     </script>
 </body>
+
 </html>
