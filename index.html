@@ -1,146 +1,437 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-</head>
-
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Deixe seu projeto pessoal ou profissional conectada 7 dias por semana e 24hs por dia!">
-    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Signika:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Tech Pereira BH</title>
-
-    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
-    <meta property="og:title" content="Tech Pereira BH | Tecnologia">
-    <meta property="og:description" content="✅Landing page.✅Sistema Web  
-    .✅Manut de computadores.✅Recup de arquivos.">
-    <meta property="og:image" content="https://roneibh.github.io/TEC-PEREIRA-BH-PLUS/img/logo pereira bh.png">
-    <meta property="og:url" content="https://roneibh.github.io/TEC-PEREIRA-BH-PLUS">
-    <meta property="og:type" content="website">
-    <title>Tech Pereira BH</title>
+    <title>Currículo Profissional de Alexandra Conceição Oliveira fonseca</title>
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-</head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --background-color: #f8f9fa;
+            --text-color: #343a40;
+            --card-background: #ffffff;
+            --border-color: #e9ecef;
+            --shadow-color: rgba(0, 0, 0, 0.08);
+        }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<body>
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            line-height: 1.6;
+            scroll-behavior: smooth; 
+        }
 
-    <header>
-        <div class="header-container">
-            <div style="display: flex; align-items: center; gap: 12px;">
-                <img src="img/logo pereira bh.png" alt="Logo">
-                <p class="nome-fantasia">Tech Pereira BH</p>
-            </div>
-    <!--         <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Promoções</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-    -->     </div>
+        /* NOVA CLASSE PARA TRAVAR A ROLAGEM DO BODY */
+        body.no-scroll {
+            overflow: hidden;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--secondary-color);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        h1, h2, h3 {
+            color: var(--text-color);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        /* --- Hero Section (Primeira Seção) --- */
+        .hero-section {
+            background-color: #343a40;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px; /* Padding ajustado */
+            text-align: center;
+            height: 100vh; /* Alterado de min-height para height */
+            box-sizing: border-box; /* Garante que o padding fique dentro da altura total */
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .profile-photo-container {
+            background-color: #ffffff;
+            border-radius: 50%;
+            padding: 5px;
+            display: inline-block;
+            margin-bottom: 20px;
+            box-shadow: 0 0 0 5px var(--primary-color);
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .hero-section h1 {
+            color: #ffffff;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-section .tagline {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+            color: #ccc;
+        }
+
+        .contact-info p {
+            font-size: 1rem;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .contact-info i {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+
+        .social-links {
+            margin-top: 25px;
+        }
+
+        .social-links a {
+            color: #ffffff;
+            font-size: 1.8rem;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* --- Main Content (Cards) --- */
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            gap: 30px;
+            grid-template-columns: 1fr;
+        }
         
-    </header>
+        .section-card {
+            background-color: var(--card-background);
+            border-radius: 12px;
+            box-shadow: 0 5px 15px var(--shadow-color);
+            padding: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
-        <main class="tela01">
-<div style="width: 100%; overflow: hidden; margin-bottom: 32px;">
-    <h1 id="letreiro" style="white-space: nowrap; display: inline-block; animation: marquee 12s linear infinite; font-size: 2.2em;">
-        👋 Olá! Criamos sites, landing pages e sistemas web!<br>
-    </h1>
-</div>
-<style>
-@keyframes marquee {
-    0%   { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
-}
-</style>
-<div class="cards-container">
-    <div class="card-imagem">
-        <img src="img/ChatGPT Image 2 de jul. de 2025, 19_03_17.png" alt="">
-        <h2>Landing page + domínio + e-mail</h2>
-        <p>Langing page Salão de beleza<br>
-            R$750,00
-        </p>
-        <a href="#" onclick="enviarWhatsApp('Landing page + domínio + e-mail (Langing page Salão de beleza - R$750,00)'); return false;" target="_blank" style="display:inline-block;margin-top:12px;padding:10px 22px;background:#e53935;color:#fff;border:none;border-radius:6px;font-size:1em;text-decoration:none;font-family:inherit;transition:background 0.2s;">
-            Falar no WhatsApp
-        </a>
-    </div>
-    <div class="card-imagem">
-        <img src="img/ChatGPT Image 2 de jul. de 2025, 18_58_33.png" alt="">
-        <h2>Sistema web completo</h2>
-        <p>Sistema web + banco de dados <br> a partir de R$1.600,00</p>
-        <a href="#" onclick="enviarWhatsApp('Sistema web completo (Sistema web + banco de dados - a partir de R$1.600,00)'); return false;" style="display:inline-block;margin-top:12px;padding:10px 22px;background:#e53935;color:#fff;border:none;border-radius:6px;font-size:1em;text-decoration:none;font-family:inherit;transition:background 0.2s;">
-            Falar no WhatsApp
-        </a>
-    </div>
-    <div class="card-imagem">
-        <img src="img/ChatGPT Image 2 de jul. de 2025, 18_50_38.png" alt="">
-        <h2>Automação inteligente</h2>
-        <p>Automatize suas tarefas <br> a partir de R$800,00</p>
-        <a href="#" onclick="enviarWhatsApp('Automação inteligente (Automatize suas tarefas - a partir de R$800,00)'); return false;" target="_blank" style="display:inline-block;margin-top:12px;padding:10px 22px;background:#e53935;color:#fff;border:none;border-radius:6px;font-size:1em;text-decoration:none;font-family:inherit;transition:background 0.2s;">
-            Falar no WhatsApp
-        </a>
-    </div>
-</div>
+        .section-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
 
-</main>
+        .section-card h2 {
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
 
-<main class="tela02">
-    <div style="display: flex; align-items: center; justify-content: center; gap: 48px; max-width: 1100px; margin: 0 auto; flex-wrap: wrap;">
-        <img src="img/logo pereira bh.png" alt="Logo Tec Pereira BH" style="border-radius: 50%; width: 380px; height: 380px; box-shadow: 0 4px 16px rgba(0,0,0,0.12); background: #fff;">
-        <div style="text-align: center; color: #000000; max-width: 520px; width: 100%;">
-            <h2 class="sobre-h2" style="font-family: 'Exo', Arial, sans-serif; font-size: 2em; margin-bottom: 12px;">Sobre a Tech Pereira BH</h2>
-            <p style="font-size: 1.15em; line-height: 1.9; text-align: center;">
-                Somos especialistas em soluções digitais e assistência técnica em informática. Oferecemos landing pages prontas, sistemas webs e domínio personalizado para o seu projeto. <br><br>Temos serviços de manutenção para computadores e notebooks com opção de acesso remoto. Nosso compromisso é entregar qualidade, agilidade e atendimento personalizado para você ou sua empresa.
-            </p>
+        .section-card h2 i {
+            color: var(--primary-color);
+        }
+
+        .card-content p, .card-content li {
+            font-size: 1rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .card-content strong {
+            color: var(--primary-color);
+        }
+        
+        .section-card ul {
+            margin-left: 20px;
+            list-style: disc;
+        }
+        .section-card ul ul {
+            list-style: circle;
+            margin-top: 5px;
+        }
+        
+        .job-entry {
+            margin-bottom: 25px;
+        }
+
+        .job-entry h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.2rem;
+            color: var(--primary-color);
+        }
+
+        .company-name {
+            font-size: 0.95rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .job-entry ul {
+            margin-left: 25px;
+            list-style: disc;
+        }
+
+        .job-entry ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--border-color);
+            margin: 20px 0;
+        }
+        
+        .contact-section {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            margin-top: 50px;
+        }
+
+        .contact-section h2 {
+            color: #ffffff;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-section p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn-primary, .btn-secondary {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-weight: 600;
+            margin: 0 10px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        
+        .btn-primary {
+            background-color: #ffffff;
+            color: var(--primary-color);
+            border: 2px solid #ffffff;
+        }
+
+        .btn-primary:hover {
+            background-color: transparent;
+            color: #ffffff;
+            transform: translateY(-3px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+        }
+
+        .btn-secondary:hover {
+            background-color: #ffffff;
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        .btn-primary i, .btn-secondary i {
+            margin-right: 8px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: var(--text-color);
+            color: #ffffff;
+            font-size: 0.9rem;
+        }
+
+        @media (min-width: 769px) {
+            main {
+                grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            }
+        }
+
+        @media (max-width: 600px) {
+            .contact-info p {
+                flex-direction: column;
+                gap: 5px;
+            }
+            .btn-primary, .btn-secondary {
+                display: block;
+                margin: 15px auto;
+                width: 80%;
+            }
+        }
+        
+        .expand-button-container {
+            margin-top: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .expand-button-container .btn-primary {
+            background-color: #f0ad4e;
+            color: var(--text-color);
+            border: 2px solid #343a40;
+        }
+        
+        main#collapsible-content {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            margin-top: 0 !important;
+            padding: 0 20px !important;
+            transition: all 0.7s ease-in-out;
+        }
+        
+        main#collapsible-content.content-visible {
+            max-height: 3000px;
+            opacity: 1;
+            margin-top: 40px !important;
+            padding: 0 20px !important;
+        }
+    </style>
+</head>
+<body class="no-scroll">
+
+    <section id="inicio" class="hero-section">
+        <div class="hero-content">
+            <div class="profile-photo-container">
+                <img src="img/Alexandra.png" alt="Foto de Perfil" class="profile-photo">
+            </div>
+            
+            <h1>Alexandra Conceição Oliveira fonseca</h1>
+            <p class="tagline">Atuar na área administrativa</p>
+            <div class="contact-info">
+                <p><i class="fas fa-phone-alt"></i> (31) 99477-6399</p>
+                <p><i class="fas fa-envelope"></i> aleofonseca@hotmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Belo Horizonte, Barreiro</p>
+            </div>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+            <div class="expand-button-container">
+                <button id="expand-cv" class="btn-primary">Ver Currículo Completo</button>
+            </div>
         </div>
-    </div>
-</main>
+    </section>
 
-<main class="tela03">
-    <div style="width: 100%; overflow: hidden; margin-bottom: 32px;">
-    <h1 id="letreiro" style="white-space: nowrap; display: inline-block; animation: marquee 12s linear infinite; font-size: 2.2em;">
-        Fazemos manutenção de computadores e recuperamos seus arquivos com segurança...<br>
-    </h1>
-</div>
-    <div class="cards-container">
-        <div class="card-imagem">
-            <img src="img/Computador.png" alt="">
-            <h2>Instalação completa do windows</h2>
-            <p>Formatação completa com backup <br>
-                R$200,00
-            </p>
-            <a href="https://wa.me/5531920048260?text=Olá!%20Tenho%20interesse%20em%20Instalação%20completa%20do%20windows%20(Formatação%20completa%20com%20backup%20-%20R$200,00)." target="_blank" style="display:inline-block;margin-top:12px;padding:10px 22px;background:#e53935;color:#fff;border:none;border-radius:6px;font-size:1em;text-decoration:none;font-family:inherit;transition:background 0.2s;">
-                Falar no WhatsApp
-            </a>
-        </div>
-        <div class="card-imagem">
-            <img src="img/Notebook.png" alt="">
-            <h2>Instalação de programas avulso</h2>
-            <p>Descrição breve da imagem ou produto. <br>R$80,00</p>
-            <a href="#" onclick="enviarWhatsApp('Instalação de programas avulso (R$80,00)'); return false;" style="display:inline-block;margin-top:12px;padding:10px 22px;background:#e53935;color:#fff;border:none;border-radius:6px;font-size:1em;text-decoration:none;font-family:inherit;transition:background 0.2s;">
-                Falar no WhatsApp
-            </a>
-        </div>
-        <div class="card-imagem">
-            <img src="img/ChatGPT Image 2 de jul. de 2025, 19_08_52.png" alt="">
-            <h2>Recuperação de arquivos</h2>
-            <p>Recuperação de arquivos do windows. <br>R$250,00</p>
-            <a href="#" onclick="enviarWhatsApp('Recuperação de arquivos do windows (R$250,00)'); return false;" style="display:inline-block;margin-top:12px;padding:10px 22px;background:#e53935;color:#fff;border:none;border-radius:6px;font-size:1em;text-decoration:none;font-family:inherit;transition:background 0.2s;">
-                Falar no WhatsApp
-            </a>
-        </div>
-    </div>
-</main>
+    <main id="collapsible-content">
+        
+        <section id="dados-pessoais" class="section-card">
+            <h2><i class="fas fa-user-circle"></i> Dados Pessoais</h2>
+            <div class="card-content">
+                <p><strong>Estado Civil:</strong> [Preencher]</p>
+                <p><strong>Idade:</strong> [Preencher] anos</p>
+                <p><strong>Habilitação:</strong> [Preencher]</p>
+            </div>
+        </section>
 
-<footer>
-    Todos os direitos reservados <br> &copy; 2025 Tech Pereira BH
-</footer>
+        <section id="formacao" class="section-card">
+            <h2><i class="fas fa-graduation-cap"></i> Cursos e Escolaridade</h2>
+            <div class="card-content">
+                <h3>Formação Acadêmica</h3>
+                <ul>
+                    <li>
+                        <strong>[Nome do Curso]</strong> - [Nome da Instituição] <br>
+                        [Ano de Início] - [Ano de Conclusão]
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-<script src="script/script.js"></script>
+        <section id="experiencia" class="section-card">
+            <h2><i class="fas fa-briefcase"></i> Experiência Profissional</h2>
+            <div class="card-content">
+                <div class="job-entry">
+                    <h3>[Cargo/Função]</h3>
+                    <p class="company-name">[Nome da Empresa] | [Mês/Ano de Início] - [Mês/Ano de Fim ou 'Atual']</p>
+                    <ul>
+                        <li>[Descrição da sua principal responsabilidade ou conquista 1]</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contato" class="contact-section">
+            <h2>Vamos Conectar!</h2>
+            <p>Estou sempre aberta a novas oportunidades e desafios. Entre em contato!</p>
+            <a href="mailto:aleofonseca@hotmail.com" class="btn-primary"><i class="fas fa-envelope"></i> Enviar E-mail</a>
+        </section>
+    
+        <footer>
+            <p>&copy; 2024 Alexandra Conceição Oliveira fonseca. Todos os direitos reservados.</p>
+        </footer>
+
+    </main>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const expandButton = document.getElementById('expand-cv');
+        const collapsibleContent = document.getElementById('collapsible-content');
+
+        if (expandButton && collapsibleContent) {
+            expandButton.addEventListener('click', () => {
+                collapsibleContent.classList.toggle('content-visible');
+                
+                // Controla a classe no-scroll do body
+                if (collapsibleContent.classList.contains('content-visible')) {
+                    document.body.classList.remove('no-scroll');
+                    expandButton.textContent = 'Recolher Currículo';
+                    collapsibleContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                } else {
+                    document.body.classList.add('no-scroll');
+                    expandButton.textContent = 'Ver Currículo Completo';
+                    // Opcional: rolar de volta para o topo
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            });
+        }
+    });
+    </script>
 </body>
-
-
 </html>
